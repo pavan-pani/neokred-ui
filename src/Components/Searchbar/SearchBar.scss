@@ -1,0 +1,55 @@
+@use '../../../public/styles/variables' as *;
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: fit-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease; 
+  
+    &:focus-within {
+      border-color: $primary-color; 
+    }
+  
+    .search-input {
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      outline: none;
+      width: 200px;
+      transition: border-color 0.3s ease;
+  
+      &::placeholder {
+        color: #888;
+      }
+  
+      &:focus {
+        border-color: $primary-color; 
+      }
+    }
+  
+    .search-button {
+      background-color: $primary-color; 
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: $hover-color;
+      }
+  
+      .search-icon {
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+  }
+  

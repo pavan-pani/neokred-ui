@@ -1,0 +1,20 @@
+# Ignore source files
+src/
+.storybook/
+stories/
+*.ts
+*.tsx
+*.scss
+
+# Ignore build configs
+rollup.config.js
+tsconfig.json
+tsconfig.app.json
+.vite/
+.eslint.*
+*.md
+
+# Ignore unnecessary files
+.vscode/
+node_modules/
+package-lock.json

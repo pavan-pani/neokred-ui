@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card {
+    // background-color: white;
+    border-radius: 8px;
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+}
+.card h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.card p {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #666;
+}
+.card a {
+    display: block;
+    color: #0073e6;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+.card a:hover {
+    text-decoration: underline;
+}

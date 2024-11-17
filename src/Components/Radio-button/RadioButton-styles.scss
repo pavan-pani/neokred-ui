@@ -1,0 +1,66 @@
+@use '../../../public/styles/variables' as *;
+
+
+.RADIOBUTTON___container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: start;
+  }
+  
+  .RADIOBUTTON___container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .RADIOBUTTON___checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #fff;
+    border: 2px solid $primary-color;
+    border-radius: 50%;
+  }
+  
+  .RADIOBUTTON___container:hover input ~ .RADIOBUTTON___checkmark {
+    background-color: #eee;
+  }
+  
+  .RADIOBUTTON___container input:checked ~ .RADIOBUTTON___checkmark {
+    background-color: $primary-color;
+    border: 2px solid $primary-color;
+  }
+  
+  .RADIOBUTTON___checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .RADIOBUTTON___container input:checked ~ .RADIOBUTTON___checkmark:after {
+    display: block;
+  }
+  
+  .RADIOBUTTON___container .RADIOBUTTON___checkmark:after {
+      top: 7px;
+      left: 7px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+  .RADIOBUTTON___disabled { 
+    cursor: not-allowed !important;
+    color: #c0c0c0;
+  }

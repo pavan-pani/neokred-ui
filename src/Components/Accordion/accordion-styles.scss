@@ -1,0 +1,39 @@
+@use '../../../public/styles/variables' as *;
+
+
+.ACCORDION___accordion {
+  width: 100%;
+}
+
+.ACCORDION___accordion-section {
+  border: 1px solid $primary-color;
+  margin-bottom: 8px;
+}
+
+.ACCORDION___accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  &.ACCORDION___active {
+    background-color: $primary-color; // Active background color
+    color: #fff;
+  }
+
+  .ACCORDION___arrow {
+    font-size: 18px;
+  }
+}
+
+.ACCORDION___accordion-content {
+  padding: 12px;
+  background-color: #f9f9f9;
+}

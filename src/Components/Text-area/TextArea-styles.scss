@@ -1,0 +1,59 @@
+@use '../../../public/styles/variables' as *;
+
+
+.TEXTAREA___textarea {
+    width: 350px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+    &:hover {
+        border-color: $primary-color;
+      }
+    
+      &:focus {
+        border-color: $primary-color;
+      }
+    
+      &.error {
+        border-color: $error-color;
+      }
+    
+      &:disabled {
+        background-color: #f5f5f5;
+        color: #999;
+        cursor: not-allowed;
+        border-color: #ddd;
+      }
+
+}
+
+.TEXTAREA___container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.TEXTAREA___text{
+    text-align: end;
+    margin-top: 4px;
+    margin-right: 4px;
+    color: #5e5d5d;
+}
+
+.TEXTAREA___label{
+    text-align: justify;
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
+.TEXTAREA___span{
+    color: red;
+    margin-left: 2px;
+}
+.TEXTAREA___disabled { 
+    cursor: not-allowed !important;
+    background-color: #a8a7a7fe !important;
+}

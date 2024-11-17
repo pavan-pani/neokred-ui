@@ -1,0 +1,56 @@
+@use '../../../public/styles/variables' as *;
+
+
+.tabs-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: fit-content; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+  }
+  
+  .tab-button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: $primary-color;
+    transition: color 0.3s ease;
+    outline: none;
+    position: relative;
+  
+    &.active {
+      font-weight: bold;
+      color: $primary-color;
+    }
+  
+    &:not(.active) {
+      color: #f5a48e; 
+    }
+  }
+  
+  .underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: $primary-color;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+  
+    &::before {
+        content: "";
+        position: absolute;
+        left: -52px;
+        top: 0;
+        height: 100%;
+        width: 57px;
+        background: linear-gradient(to right, transparent, $primary-color);
+        pointer-events: none;
+    }
+  }
+  
