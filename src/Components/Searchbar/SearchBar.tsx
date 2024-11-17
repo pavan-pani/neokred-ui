@@ -28,7 +28,6 @@ const SearchBar: React.FC<SearchBarProps> = ({ placeholder = 'Search', onSearch 
 
   return (
     <div className="search-bar">
-      <label htmlFor="search-input" className="sr-only">Search</label>
       <input
         id="search-input"
         type="text"
